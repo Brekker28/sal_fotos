@@ -1,6 +1,20 @@
-.column_1{
-    width: 250px !important;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;  
 }
+
+:root {
+    --C_principal: #7e4cea;
+    --C_oscuro:#4f3a99;
+    --C_clara:#a68ee8;
+    --V_pricipal:#88fc84;
+    --V_clara:#a9ffa9;
+    --V_Clara_plus:#d9ffa9;
+    --G_texo:#868686;
+    --G_fondo:#b1b1b1;
+    --G_borde:#c5c5c5;
+  }
 .off_border{
     border: none !important;
 }
@@ -49,3 +63,247 @@
   .checkbox_salitre[type="checkbox"]:checked::before {
 	transform: scale(1);
   }
+
+
+
+/*Progres Bar*/
+.progres{
+    background-color: var(--V_pricipal);
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    color: var(--C_oscuro);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.progres_active {
+    background-color: var(--C_principal);
+    color: white;
+}
+
+
+/*Scrool Bar*/
+.shoppy_body{    
+	height: 500px;
+    width: 100%;
+    animation: fade-in 0.3s forwards;    
+    
+}
+@keyframes fade-in{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.shoppy_body::-webkit-scrollbar{
+    background: #a68ee88e;
+    width: 7px;
+
+}
+.shoppy_body::-webkit-scrollbar-thumb{
+    background: var(--C_clara);
+
+}
+
+/*Cards*/
+.i_content{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10%;    
+    width: 170px;
+    height: 150px;
+}
+
+/*Description Overflow*/
+
+.modal_text{
+    background: none;
+    border: none;
+    color: var(--C_principal);
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: url(/galery/Icons/icon_detail.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    transition: 0.2s;
+    z-index: 2;
+}
+.modal_text:hover{
+    width: 35px;
+    height: 35px;
+}
+.modal_text_active{
+    z-index: 4;
+}
+.text_content_active{
+    background: var(--C_clara); 
+    position: absolute;       
+    overflow: initial;
+    max-height: fit-content !important;
+    z-index: 3;
+}
+.text_content_active h2{
+    color: white !important;
+
+}
+.text_content_active h3{    
+    color: white !important;
+
+}
+.text_content_active p{
+    color: white !important;
+}
+
+
+/*Lista Precios*/
+.list_price_container{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.restart{
+    border: none;
+    background: none;
+    color: var(--C_principal);
+    font-weight: bold;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.restart:hover{
+    color: var(--c_oscuro);     
+}
+
+.more{
+    border: none;
+    background: none;
+    color: var(--C_principal);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.more:hover{
+    color: var(--V_pricipal);     
+}
+
+.quantity_content{
+    border: 1px solid var(--G_texo);
+    padding: 5px 10px 5px 10px;
+    font-size: 30px;    
+    height: 40px;    
+}
+
+/*Input Descuento*/
+.input_des{
+    text-align: center;
+    border: none;    
+    border: 2px solid var(--G_texo);
+    border-radius: 1    px;    
+    color: var(--G_texo);
+    font-size: 15px;
+
+}
+
+.input_des:focus{
+    outline: none;
+}
+/*Botones Persolanizados*/
+.aplica_descuento_btn{
+    background: none;
+    border: none;
+    background-color: black;
+    color: white;
+    width: auto;    
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    font-weight:bold;
+    font-size: 15px;    
+    background-color: var(--V_pricipal);
+    color: var(--C_oscuro);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.aplica_descuento_btn:hover{
+    background-color: var(--C_oscuro);
+    color: white;
+    cursor: pointer;
+}   
+.aplica_descuento_btn:active{
+    background-color: var(--V_pricipal);
+} 
+
+
+.btns_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    margin-top: 20px;
+}
+.btns_content{
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.btn_shoppy{
+    background: none;
+    border: none;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 10px 50px 10px 50px;
+    border-radius: 15px;
+    font-weight:bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_shoppy:hover{
+    padding: 10px 55px 10px 55px;
+}
+.ant{
+    background-color: var(--C_principal);
+}
+.ant:hover{
+    background-color: var(--C_oscuro);
+}
+.ant:active{
+    background-color: var(--C_principal);
+}
+
+.next{
+    background-color: var(--V_pricipal);
+    color: var(--C_oscuro);
+    transition: 0.3s;
+
+}
+.next:hover{
+    background-color: var(--V_clara);
+    
+}
+.next:active{
+    background-color: var(--V_pricipal);
+}
+
+/*Background con  imagenes*/
+.img_bag{
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
