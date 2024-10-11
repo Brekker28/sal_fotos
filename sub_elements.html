@@ -9,151 +9,189 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
-<body>
+<body> 
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >      
+      <div class="modal-content" style="background-color: #7e4cea;color: white;">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 211" preserveAspectRatio="none">
+          <style type="text/css">
+            .ct0{fill:rgba(0, 0, 0, 0.175);}
+            .ct1{fill:#FFFFFF;}
+            .ct2{fill:#040006;}
+          </style>
+          <rect class="ct0" width="2600" height="211"></rect>
+          <path class="ct1" d="M1325.1,209c0,89.7,72.7,162.4,162.4,162.4s162.4-72.7,162.4-162.4s-72.7-162.4-162.4-162.4
+            S1325.1,119.3,1325.1,209"></path>
+          <path class="ct2" d="M1447.1,129.6c0,22.2,18,40.2,40.2,40.2s40.2-18,40.2-40.2s-18-40.2-40.2-40.2
+            C1465.3,89.4,1447.1,107.4,1447.1,129.6"></path>
+          <path class="ct1" d="M973.1,209c0,107.5,87.2,194.6,194.6,194.6c107.5,0,194.6-87.2,194.6-194.6s-87.2-194.6-194.6-194.6
+            C1060.3,14.4,973.1,101.5,973.1,209"></path>
+          <path class="ct2" d="M1110.8,129.6c0,31.5,25.5,57,57,57c31.5,0,57-25.5,57-57s-25.5-57-57-57C1136.3,72.7,1110.8,98.2,1110.8,129.6
+            "></path>
+          </svg>
+  
+        </div>
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center w-100">
+          <img src="galery/photo_test.jpg" alt="" srcset="" class="img-fluid">
+        </div>
+        <div class="modal-footer d-flex justify-content-center align-items-center">        
+          <button type="button" class="aplica_descuento_btn" style="font-weight: 600 !important;">Sonrie</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #7e4cea !important;">
         <div class="container-fluid">            
-            <img src="galery/logo.png" class="img-fluid mx-auto d-block" style="width: 110px;" alt="..." onclick="window.location.href=('/sal_fotos/')">
+            <img src="galery/logo.png" class="img-fluid mx-auto d-block" style="width: 150px;" alt="..." onclick="window.location.href=('/sal_fotos/')">
         </div>
     </nav>
+
     <div class="container-fluid">
-        
-        <div class="d-flex justify-content-center container-fluid mt-4" >
-          <form class="row w-75 justify-content-center">
-              <div class="col-auto column_1">
-                <label for="date_from" class="form-label">Fecha Desde:</label>
-                <input type="date" class="form-control" id="date_from">
+
+      <div class="container-fluid mt-5" >
+        <div class="d-flex justify-content-center container-fluid" >
+          <div class="card mb-3 off_border" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-2 d-flex justify-content-center">
+                <img src="galery/user.png" class="img-fluid rounded-start" alt="..." style="width: calc(50px + 10vw); max-width:90px;">
               </div>
-              <div class="col-auto column_1">
-                <label for="time_from" class="form-label">Hora Desde:</label>
-                <input type="time" class="form-control" id="time_from" placeholder="Password">
-              </div>  
-              <div class="col-auto column_1">
-                  <label for="date_at" class="form-label">Fecha Hasta:</label>
-                  <input type="date" class="form-control" id="date_at">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Reconocimiento Facial</h5>
+                  <p class="card-text text-center">Tomate Una Foto</p>                    
                 </div>
-                <div class="col-auto column_1">
-                  <label for="time_at" class="form-label">Hora Hasta:</label>
-                  <input type="time" class="form-control" id="time_at" placeholder="Password">
-                </div>             
-          </form>
-        </div>
-        
-        <div class="container-fluid mt-5" >
-          <div class="d-flex justify-content-center container-fluid" >
-            <div class="card mb-3 off_border" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-2 d-flex justify-content-center">
-                  <img src="galery/user.png" class="img-fluid rounded-start" alt="..." style="width: calc(50px + 10vw); max-width:90px;">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Reconocimiento Facial</h5>
-                    <p class="card-text text-center">Tomate Una Foto</p>                    
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <button type="button" class="btn btn-success w-100 " style="min-width: 85px;"><i class="bi bi-camera" style="font-size: 50px;"></i></button>                  
-                </div>
+              </div>
+              <div class="col-md-2">
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-success w-100 " style="min-width: 85px;"><i class="bi bi-camera" style="font-size: 50px;"></i></button>                  
               </div>
             </div>
           </div>
+        </div>
       </div>
+
       <div class="container-fluid mt-5" >
         <div class="d-flex justify-content-center">
           <img src="galery/user.png" class="img-fluid rounded-start" style="width: 50px;" alt="...">
         </div>
         <h1 class="text-center fs-4">Tus Fotos</h1>       
       </div>
+
       <div class="container-fluid mt-5 mb-5" >
-        <div class="container-fluid">
-          <div class="d-flex justify-content-end">
-            <button class="btn_shoppy" style="background-color: #7e4cea !important;" onclick="window.location.href=('/sal_fotos/sell.html')">Comprar Album</button>
-          </div>          
-          <div class="mt-2">
+        <div class="container-fluid">          
+          <div class="mt-2 d-flex align-items-center justify-content-center flex-column" style="max-width: 1700px;">   
+            <div class="column d-flex gap-4 flex-wrap align-items-center justify-content-center" style="max-width: 1700px;">
 
-            <div class="column d-flex gap-4 flex-wrap align-items-center justify-content-center">
-
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-              <div class="position-relative text-center">
-                <input type="checkbox" name="" id="" class="position-absolute checkbox_salitre" style="left: 5px;top: 5px;">
-                <img class="img-fluid" src="galery/photo_test.jpg" alt="" style="width: 300px;height: 200px;min-width: 300px;">
-                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 ">
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
                   <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
-                    <h2 class="fs-6 d-flex align-items-center m-0"><i class="bi bi-bag"></i>15.000</h2>
-                    <button class=" btn btn-success">Comprar</button>
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
                   </div>                                           
                 </div>
               </div>
-
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
+                  <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
+                  </div>                                           
+                </div>
+              </div>
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
+                  <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
+                  </div>                                           
+                </div>
+              </div>
+              
+              <div class="position-relative text-center img_container" onclick="console.log(this.classList.toggle('select_img'))">
+                <img class="img-fluid rounded-3" src="galery/photo_test.jpg" alt="" style="width: 400px;height: 300px;min-width: 300px;">
+                <div class="w-100 position-absolute overflow-hidden left-0 bottom-0 rounded-bottom-3">
+                  <div class="d-flex justify-content-between overflow-hidden text-light p-2" style="background-color: #7e4cea80;">
+                    <h2 class="fs-6 d-flex align-items-center m-0 gap-3"><img src="galery/emo_salitre/IMAGEN AL LADO DEL PRECIO CON FONDO.png" style="width: 30px;" class="img-fluid rounded-2"></i>$15.000</h2>                    
+                  </div>                                           
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="d-flex justify-content-end mt-4 w-100 gap-3" style="margin-right: 30px;">
+              <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos/sell.html')">Comprar Album</button>
+              <button class="aplica_descuento_btn" onclick="window.location.href=('/sal_fotos/sell.html')">Comprar Seleccion</button>
             </div>
           </div>                     
         </div>
