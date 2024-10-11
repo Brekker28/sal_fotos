@@ -1,10 +1,16 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family: 'M PLUS Rounded 1c', sans-serif;  
-  font-weight: 400 !important;
+  font-family: 'M PLUS Rounded 1c', sans-serif;    
 }
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
+}
 :root {
     --C_principal: #7e4cea;
     --C_oscuro:#4f3a99;
@@ -46,18 +52,20 @@
 .select_img::before {
     content: "";
     background-image: url(../galery/Icons/check-mark.png);
-    background-size: contain;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100%;    
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(109, 109, 109, 0.377);
     backdrop-filter: blur(2px); 
-    z-index: 2; 
+    z-index: 2;
+    border-radius: 20px; 
 }
+
 .checkbox_salitre[type="checkbox"] {	
 	-webkit-appearance: none;
 	appearance: none;	

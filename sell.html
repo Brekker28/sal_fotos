@@ -25,8 +25,7 @@
                     <hr class="w-100" style="height: 4px;z-index: 1;background: var(--C_principal);">
                 </div>
                 <div class="position-relative d-flex justify-content-center align-items-center gap-5" style="z-index: 2;" id="nav_progres">
-                    <div class="progres one" id="one">Fotos y Albumes</div>                        
-                    <div class="progres three" id="three">Resumen de tu compra</div>
+                    <div class="progres one" id="one">Resumen de tu compra</div>                                            
                 </div>
             </div>
         </nav>
@@ -36,34 +35,12 @@
         <section class="d-flex w-100 justify-content-center mt-5">
             <div class="d-flex justify-content-center rounded-5" style="width: 80%;max-width: 700px;border: 0.5px solid var(--G_texo);">
                 <div class="w-100 d-flex justify-content-center flex-column" style="height: 95%;">
+                    
                     <nav>
                         <div class="d-flex justify-content-center align-items-center text-white rounded-top p-2" style="background-color: var(--C_oscuro);">Tienda</div>
                         <div id="current_date" class="d-flex justify-content-center align-items-center " style="background-color: var(--V_pricipal);color: var(--C_oscuro);"></div>
-                    </nav>
-                    <!-- PAGINA UNO -->
-                    <div id="page_1" class="d-flex align-items-center flex-column  overflow-y-scroll shoppy_body" >
-                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
-                            </div>
-                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
-                                <div class="overflow-hidden p-1 text_content" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;">
-                                    <h2 style="font-size: 18px;font-weight: bold;">Nombre Album</h2>
-                                    <h3 style="font-weight: bold;">Nombre Foto</h3>                                   
-                                </div>                                
-                            </div>
-                            <div class="d-flex justify-content-center flex-column align-items-center" id="price_container_1">
-                                <ul class="list_price_container">
-                                    <li style="text-decoration-line: line-through;color: var(--G_texo);">$84.900</li>
-                                    <li style="color: var(--C_principal);">-10%</li>
-                                    <li value="76410" id="product_1" class="gross_value">$76.410</li>
-                                </ul>                                
-                            </div>
-                        </div>                                                                                                                    
-                    </div>
-                    <!---->                    
-                    <!-- PAGINA TRES -->
-                    <div id="page_2" class="shoppy_body" style="display: none;">
+                    </nav>                    
+                    <div id="page_1" class="shoppy_body">
                         <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
@@ -82,55 +59,50 @@
                                 </ul>                                
                             </div>
                         </div>                     
-                    </div>
-                    <!---->
-                    <!--FOOTER PAGINA UNO-->
-                    <footer class="w-100" id="footer_container_page_1" >                        
-                        <div class="d-flex justify-content-center align-items-center text-white" style="background-color: var(--C_oscuro);padding: 10px 0px 10px 0px;">Total: $<strong>0</strong></div>                                                            
-                    </footer>
-                    <!---->
-                    <!--FOOTER PAGINA TRES -->
-                    <footer class="w-100" id="footer_container_page_2" style="display: none;">
-                        <div class="d-flex justify-content-center align-items-center text-white" style="background-color: var(--G_borde);padding: 10px 0px 10px 0px;">Subtotal: $<strong>0</strong> </div>
-                        <div class="w-100 d-flex align-items-center justify-content-center flex-column" style="background: var(--C_principal);">
-                          <div class="d-flex text-center justify-content-center gap-1 w-100 text-white" style="margin: 10px 0px 10px 0px;font-size: 20px;">
-                            Codigo de descuento: <input class="input_des" placeholder="Prueba" type="text">
-                          </div>
-                          <button class="aplica_descuento_btn">Aplicar Descuento</button>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center text-white" style="padding: 10px 0px 10px 0px;background-color: var(--G_borde);">
-                        </div>      
-                        <div class="d-flex justify-content-center align-items-center text-white" style="padding: 10px 0px 10px 0px;background-color: var(--C_oscuro);">Total con descuento(s) aplicado(s): $<strong>0</strong></div>
-                    </footer>
-                    <!---->
+                    </div>                                                   
+                    <footer class="w-100" id="footer_container_page_1">
+                        <div class="d-flex justify-content-center align-items-center text-white" style="background-color: var(--G_borde);padding: 10px 0px 10px 0px;">Subtotal: $<strong>0</strong> </div>                       
+                        <div class="d-flex justify-content-center align-items-center text-white" style="padding: 10px 0px 10px 0px;background-color: var(--V_pricipal);color: var(--C_principal) !important;">Descuento:$<strong>0</strong></div>      
+                        <div class="d-flex justify-content-center align-items-center text-white" style="padding: 10px 0px 10px 0px;background-color: var(--C_oscuro);">Total: $<strong>0</strong></div>
+                    </footer>                 
+
                 </div>                
             </div>
         </section>
         <!--Fin Contenedor de las paginas de los productos--> 
 
         <!--Botones para el cambio de pagina de productos-->   
-        <section class="btns_container">
-            <div class="btns_content">
-                <button class="btn_shoppy ant" id="ant">
-                    Volver
-                </button>
-                <button class="btn_shoppy next" id="next">
-                    Continuar
-                </button>
-            </div>
+        <section class="d-flex justify-content-center align-items-center mt-3">            
+            <button class="btn_shoppy ant" id="ant">
+                Volver
+            </button>                
         </section>
         <!--Fin Botones para el cambio de pagina de productos-->   
     </div>      
         
-    <footer class="d-flex justify-content-center mt-3 mb-3">
-        <div >
-            <div class="text-center" style="color: var(--G_texo);font-size: 15px;font-weight: bold;">Metodos de pago:</div>
-            <div class="d-flex justify-content-center gap-4 mt-3" >                
-                <div class="img_bag" style="background-image: url(galery/Icons/visa.png);width: 50px;height: 50px;"></div>
-                <div class="img_bag" style="background-image: url(galery/Icons/master_card.png);width: 50px;height: 50px;"></div>                
-            </div>
-        </div>
-    </footer>    
+    <footer class="mt-4" style="background-color: #7e4cea;width: 100%;height: auto;">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 211" preserveAspectRatio="none">
+          <style type="text/css">
+            .ct0{fill:rgba(0, 0, 0, 0);}
+            .ct1{fill:#FFFFFF;}
+            .ct2{fill:#040006;}
+          </style>
+          <rect class="ct0" width="2600" height="211"></rect>
+          <path class="ct1" d="M1325.1,209c0,89.7,72.7,162.4,162.4,162.4s162.4-72.7,162.4-162.4s-72.7-162.4-162.4-162.4
+            S1325.1,119.3,1325.1,209"></path>
+          <path class="ct2" d="M1447.1,129.6c0,22.2,18,40.2,40.2,40.2s40.2-18,40.2-40.2s-18-40.2-40.2-40.2
+            C1465.3,89.4,1447.1,107.4,1447.1,129.6"></path>
+          <path class="ct1" d="M973.1,209c0,107.5,87.2,194.6,194.6,194.6c107.5,0,194.6-87.2,194.6-194.6s-87.2-194.6-194.6-194.6
+            C1060.3,14.4,973.1,101.5,973.1,209"></path>
+          <path class="ct2" d="M1110.8,129.6c0,31.5,25.5,57,57,57c31.5,0,57-25.5,57-57s-25.5-57-57-57C1136.3,72.7,1110.8,98.2,1110.8,129.6
+            "></path>
+          </svg>    
+        </div> 
+        <div>
+      
+      </div>
+      </footer>   
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
