@@ -5,7 +5,7 @@
 }
 body{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -47,11 +47,11 @@ body{
 }
 .img_container:hover{
     cursor: pointer;    
-    transform: scale(1.1);    
+    transform: scale(1.05);    
 }
 .select_img::before {
     content: "";
-    background-image: url(../galery/Icons/check-mark.png);
+    background-image: url(../galery/emo_salitre/EMOCION.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -274,8 +274,8 @@ body{
     transition: 0.3s;
 }
 .aplica_descuento_btn:hover{
-    background-color: var(--C_oscuro);
-    color: white;
+    background-color: var(--V_clara);  
+    color: black;  
     cursor: pointer;
 }   
 .aplica_descuento_btn:active{
@@ -365,4 +365,15 @@ body{
 	background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/*Puntos de quiebre*/
+@media all and (max-width: 767px) {
+    h5{
+        font-size: 17px !important;
+    }
+    p{
+        font-size: 12px !important;
+    }
 }
