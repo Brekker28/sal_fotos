@@ -384,7 +384,8 @@ body{
     height: max-content;
     max-width: 100px;
     width: calc(30px + 10vw);
-    height: 100px;
+    height: 120px;
+    overflow: hidden;
     
 }
 
@@ -402,11 +403,11 @@ body{
 
 .active{    
     opacity: 1 !important;
-    animation: 2s alternate slide_out2;
+    animation: 1s alternate slide_out2;
 }
 .next{    
     opacity: 0 !important;
-    animation: 2s alternate slide_out;
+    animation: 1s alternate slide_out;
 }
 
 @keyframes slide_out {

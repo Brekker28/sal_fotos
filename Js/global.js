@@ -58,4 +58,4 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % images.length;
     images[currentIndex].classList.remove('next');  
     images[currentIndex].classList.add('active');
-}, 3000);
+}, 2000);
