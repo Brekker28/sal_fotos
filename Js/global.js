@@ -45,17 +45,3 @@ export function obtenerMesEspañol(id_mes) {
 }
 
 
-const images = document.querySelectorAll('#image-container img');
-let currentIndex = 0;
-console.log(images);
-images[currentIndex].classList.add('active');
-
-setInterval(() => {
-    
-    images[currentIndex].classList.remove('active');
-    images[currentIndex].classList.add('next');
-        
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.remove('next');  
-    images[currentIndex].classList.add('active');
-}, 2000);

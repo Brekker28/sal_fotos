@@ -54,4 +54,20 @@
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script type="module" src="/tree/main/Js/productos.js" defer></script>
+<script type="module">
+  const images = document.querySelectorAll('#image-container img');
+  let currentIndex = 0;
+
+  images[currentIndex].classList.add('active');
+
+  setInterval(() => {
+      
+      images[currentIndex].classList.remove('active');
+      images[currentIndex].classList.add('next');
+          
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.remove('next');  
+      images[currentIndex].classList.add('active');
+  }, 2000);
+
+</script>
