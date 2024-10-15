@@ -14,24 +14,8 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" >      
       <div class="modal-content" style="background-color: #7e4cea;color: white;">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 211" preserveAspectRatio="none">
-          <style type="text/css">
-            .ct0{fill:rgba(43, 43, 43, 0);}
-            .ct1{fill:#FFFFFF;}
-            .ct2{fill:#040006;}
-          </style>
-          <rect class="ct0" width="2600" height="211"></rect>
-          <path class="ct1" d="M1325.1,209c0,89.7,72.7,162.4,162.4,162.4s162.4-72.7,162.4-162.4s-72.7-162.4-162.4-162.4
-            S1325.1,119.3,1325.1,209"></path>
-          <path class="ct2" d="M1447.1,129.6c0,22.2,18,40.2,40.2,40.2s40.2-18,40.2-40.2s-18-40.2-40.2-40.2
-            C1465.3,89.4,1447.1,107.4,1447.1,129.6"></path>
-          <path class="ct1" d="M973.1,209c0,107.5,87.2,194.6,194.6,194.6c107.5,0,194.6-87.2,194.6-194.6s-87.2-194.6-194.6-194.6
-            C1060.3,14.4,973.1,101.5,973.1,209"></path>
-          <path class="ct2" d="M1110.8,129.6c0,31.5,25.5,57,57,57c31.5,0,57-25.5,57-57s-25.5-57-57-57C1136.3,72.7,1110.8,98.2,1110.8,129.6
-            "></path>
-          </svg>
-          
+        <div class="d-flex justify-content-center">
+          <img src="galery/emoji ojos.png" alt="" srcset="" class="img-fluid" style="width: calc(200px + 10vw); max-width: 300px; min-width: 80px;">
         </div>        
         <div class="modal-body d-flex justify-content-center align-items-center w-100 pt-0">
           <img src="galery/photo_test.jpg" alt="" srcset="" class="img-fluid">
@@ -52,12 +36,12 @@
 
     <div class="container-fluid">
 
-      <div class="container-fluid mt-5" >
+      <div class="container-fluid" style="margin-top: 13px;" >
         <div class="d-flex justify-content-center container-fluid" >
           <div class="card mb-3 off_border" style="max-width: 800px;">
             <div class="row g-0">
-              <div class="col-md-2 d-flex justify-content-center">
-                <img src="galery/user.png" class="img-fluid rounded-start" alt="..." style="width: calc(50px + 10vw); max-width:112px;">
+              <div class="col-md-2 d-flex justify-content-center">                
+                <img src="galery/user.svg" class="img-fluid rounded-start" alt="..." style="width: calc(50px + 10vw); max-width:112px;">
               </div>
               <div class="col-md-8">
                 <div class="card-body" style="font-weight: 500 !important;">
@@ -66,7 +50,7 @@
                 </div>
               </div>
               <div class="col-md-2 d-flex justify-content-center">
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="w-100 aplica_descuento_btn d-flex justify-content-center align-items-center" style="min-width: 85px;max-width: 85px;"><i class="bi bi-camera" style="font-size: 50px;"></i></button>                  
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="w-100 aplica_descuento_btn d-flex justify-content-center align-items-center p-0" style="min-width: 85px;max-width: 85px;"><i class="bi bi-camera" style="font-size: 50px;"></i></button>                  
               </div>
             </div>
           </div>
@@ -75,18 +59,18 @@
 
       <div class="container-fluid" >
         <div class="d-flex justify-content-center">
-          <img src="galery/user.png" class="img-fluid rounded-start" style="width: 50px;" alt="...">
+          <img src="galery/user.svg" class="img-fluid rounded-start" style="width: 50px;" alt="...">
         </div>
         <h1 class="text-center fs-4">Tus Fotos</h1>       
       </div>
 
-      <div class="container-fluid mt-5 mb-5">
+      <div class="container-fluid mb-5">
         <div class="container-fluid d-flex align-items-center justify-content-center">          
           <div class="mt-2 d-flex align-items-center justify-content-center flex-column" style="max-width: 1700px;">   
-            <div class="d-flex align-items-center justify-content-end mt-4 w-100 gap-3 flex-wrap">
-                <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos')">Volver</button>              
-                <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos/sell.html')">Comprar Album</button>
-                <button class="aplica_descuento_btn" onclick="window.location.href=('/sal_fotos/sell.html')">Comprar Seleccion</button>              
+            <div class="d-flex align-items-center justify-content-center mt-4 w-100 gap-3 flex-wrap">
+                <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos')" style="max-width: 197px;min-width: 197px;">Volver</button>              
+                <button class="aplica_descuento_btn" onclick="window.location.href=('/sal_fotos/sell.html')" style="max-width: 197px;min-width: 197px;">Comprar Album</button>
+                <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos/sell.html')" style="max-width: 197px;min-width: 197px;">Comprar Seleccion</button>              
             </div>
             <div class="column d-flex gap-4 flex-wrap align-items-center justify-content-center" style="max-width: 1700px;">
 
@@ -197,13 +181,18 @@
               
               
               
-            </div>            
+            </div> 
+            <div class="d-flex align-items-center justify-content-center mt-4 w-100 gap-3 flex-wrap">
+              <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos')" style="max-width: 197px;min-width: 197px;">Volver</button>              
+              <button class="aplica_descuento_btn" onclick="window.location.href=('/sal_fotos/sell.html')" style="max-width: 197px;min-width: 197px;">Comprar Album</button>
+              <button class="aplica_descuento_btn2" onclick="window.location.href=('/sal_fotos/sell.html')" style="max-width: 197px;min-width: 197px;">Comprar Seleccion</button>              
+            </div>    
           </div>                     
         </div>
       </div>
     </div>
     <footer style="background-color: #7e4cea;width: 100%;height: auto;" class="d-flex justify-content-center pt-2">
-      <img src="galery/emoji ojos.png" alt="" srcset="" class="img-fluid" style="width: calc(200px + 10vw); max-width: 300px; min-width: 100px;">  
+      <img src="galery/emoji ojos.png" alt="" srcset="" class="img-fluid" style="width: calc(200px + 10vw); max-width: 300px; min-width: 100px;">
     </footer>
 </body>
 </html>

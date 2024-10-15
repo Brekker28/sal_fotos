@@ -14,26 +14,13 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #7e4cea !important;">
         <div class="container-fluid">            
-            <img src="galery/logo.png" class="img-fluid mx-auto d-block" style="width: 110px;" alt="..." onclick="window.location.href=('/sal_fotos/')">
+            <img src="galery/logo.png" class="img-fluid mx-auto d-block" style="width: 150px;" alt="..." onclick="window.location.href=('/sal_fotos/')">
         </div>
     </nav>
-    <div>
-        <!--Cabezera de la pagina de productos-->   
-        <nav class="d-flex justify-content-center align-items-center w-100 mt-4" id="nav_progres_container">
-            <div class="position-relative" id="nav_progres_content">
-                <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" id="back_slide">
-                    <hr class="w-100" style="height: 4px;z-index: 1;background: var(--C_principal);">
-                </div>
-                <div class="position-relative d-flex justify-content-center align-items-center gap-5" style="z-index: 2;" id="nav_progres">
-                    <div class="progres one" id="one">Resumen de tu compra</div>                                            
-                </div>
-            </div>
-        </nav>
-        <!--Fin Cabezera de la pagina de productos-->   
-
+    <div>                
         <!--Contenedor de las paginas de los productos--> 
         <section class="d-flex w-100 justify-content-center mt-5 gap-5 flex-wrap">
-            <form action="" class="border p-2 rounded-5" style="height: max-content;">                
+            <form action="" class="border p-2 rounded-5" style="height: max-content;max-width: 700px;min-width: 200px;width: calc(180px + 30vw);">                
                 <div class="d-flex flex-column justify-content-center align-items-center">                
                     <h1 class="fs-4 pt-2" style="color: var(--C_oscuro);width: 80%;font-weight: bold;">Confirmar tus datos</h1>
                     <div style="width: 80%;">
@@ -65,40 +52,32 @@
                         </div>
                         <p>Te invitamos a revisar <strong style="color: var(--C_oscuro);cursor: pointer;">tips, políticas, términos y condiciones</strong> de visita y de la compra web.</p>
                     </div>
-                    <button class="aplica_descuento_btn">Continuar</button>
+                    <button class="aplica_descuento_btn">Pagar</button>
                 </div>
                 
             </form>
-            <div class="d-flex justify-content-center rounded-5 flex-column align-items-center" style="width: 80%;max-width: 700px;">
-                <div class="w-100 d-flex justify-content-center flex-column rounded-5" style="height: 100%;border: 1px solid var(--G_texo);">
+            <div class="d-flex justify-content-center rounded-5 flex-column align-items-center" style="width: 80%;max-width: 600px;width: calc(180px + 30vw);min-width: 150px;">
+                <div class="w-100 d-flex justify-content-center flex-column rounded-4" style="height: 100%;border: 1px solid var(--G_texo);">
                     <nav>
-                        <div class="d-flex justify-content-center align-items-center text-white rounded-top p-2" style="background-color: var(--C_oscuro);">Tienda</div>
+                        <div class="d-flex justify-content-center align-items-center text-white rounded-top-4 fs-5" style="background-color: var(--C_oscuro);padding: 11px;font-weight: bold;">Resumen de tu compra</div>
                         <div id="current_date" class="d-flex justify-content-center align-items-center " style="background-color: var(--V_pricipal);color: var(--C_oscuro);"></div>
                     </nav>                    
-                    <div id="page_1" class="shoppy_body">
+                    <div id="page_1" class="shoppy_body overflow-y-scroll">
                         <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
                             </div>
                             <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
-                                <div class="overflow-hidden p-1 text_content" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;">
-                                    <h2 style="font-size: 18px;font-weight: bold;">Nombre Album</h2>
-                                    <h3 style="font-weight: bold;">Nombre Foto</h3>                                   
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
                                 </div>                                
-                            </div>
-                            <div class="d-flex justify-content-center flex-column align-items-center" id="price_container_1">
-                                <ul class="list_price_container">
-                                    <li style="text-decoration-line: line-through;color: var(--G_texo);">$84.900</li>
-                                    <li style="color: var(--C_principal);">-10%</li>
-                                    <li value="76410" id="product_1" class="gross_value">$76.410</li>
-                                </ul>                                
-                            </div>
+                            </div>                           
                         </div>                     
+                                    
                     </div>                                                   
-                    <footer class="w-100" id="footer_container_page_1">
-                        <div class="d-flex justify-content-center align-items-center text-white" style="background-color: var(--G_borde);padding: 10px 0px 10px 0px;">Subtotal: $<strong>0</strong> </div>                       
-                        <div class="d-flex justify-content-center align-items-center text-white" style="padding: 10px 0px 10px 0px;background-color: var(--V_pricipal);color: var(--C_principal) !important;">Descuento:$<strong>0</strong></div>      
-                        <div class="d-flex justify-content-center align-items-center text-white rounded-bottom-5" style="padding: 10px 0px 10px 0px;background-color: var(--C_oscuro);">Total: $<strong>0</strong></div>
+                    <footer class="w-100" id="footer_container_page_1">                        
+                        <div class="d-flex justify-content-center align-items-center text-white rounded-bottom-4" style="padding: 10px 0px 10px 0px;background-color: var(--C_oscuro);">Total: $<strong>0</strong></div>
                     </footer>                 
 
                 </div>  

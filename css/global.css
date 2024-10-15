@@ -51,7 +51,7 @@ body{
 }
 .select_img::before {
     content: "";
-    background-image: url(../galery/emo_salitre/EMOCION.png);
+    background-image: url(../galery/emo_salitre/IMAGEN\ AL\ LADO\ DEL\ PRECIO\ SIN\ FONDO.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -377,3 +377,55 @@ body{
         font-size: 12px !important;
     }
 }
+
+/*Cambio de imagenes index*/
+#image-container {
+    position: relative;    
+    height: max-content;
+    max-width: 100px;
+    width: calc(30px + 10vw);
+    height: 100px;
+    
+}
+
+#image-container img {
+    max-width: 100px;
+    width: calc(30px + 10vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 1s ease-in-out;
+    height: 100px;
+}
+
+.active{    
+    opacity: 1 !important;
+    animation: 2s alternate slide_out2;
+}
+.next{    
+    opacity: 0 !important;
+    animation: 2s alternate slide_out;
+}
+
+@keyframes slide_out {
+    0%{        
+        transform: translateY(0);
+    }60%{        
+        transform: translateY(120%);
+    }100%{        
+        transform: translateY(100%);    
+    }
+}
+
+@keyframes slide_out2 {
+    0%{        
+        transform: translateY(-100%);
+    }60%{        
+        transform: translateY(20%);
+    }100%{        
+        transform: translateY(0);    
+    }
+}
+
