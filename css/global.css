@@ -381,9 +381,8 @@ body{
 /*Cambio de imagenes index*/
 #image-container {
     position: relative;    
-    height: max-content;
-    max-width: 100px;
-    width: 120px;    
+    height: max-content;    
+    width: 100px;    
     height: 120px;
     overflow: hidden;
     
