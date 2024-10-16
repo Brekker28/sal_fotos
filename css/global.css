@@ -27,11 +27,11 @@ body{
 }
 
 .img_category{
-	width: calc(100px + 50vw);
+	width: calc(50px + 50vw);
 	max-width: 410px;
-	min-width: 270px;
+	min-width: 100px;
 
-	height: calc(100px + 10vw);
+	height: calc(80px + 10vw);
 	max-height: 184px;
     transition: 0.3s;
     cursor: pointer;
@@ -376,6 +376,9 @@ body{
     p{
         font-size: 12px !important;
     }
+    .container_data_photo{
+        gap: 10px;
+    }
 }
 
 /*Cambio de imagenes index*/
@@ -429,3 +432,7 @@ body{
     }
 }
 
+/*Addi*/
+.addi_banner_log{
+    background: url(https://statics.addi.com/assets/addi-icon-lineal.png) center center / contain no-repeat, transparent;
+}

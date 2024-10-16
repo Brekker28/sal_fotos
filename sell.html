@@ -22,8 +22,8 @@
         <section class="d-flex w-100 justify-content-center mt-5 gap-5 flex-wrap mb-5">
             <form action="" class="border rounded-5" style="height: max-content;max-width: 550px;min-width: 250px;width: calc(180px + 30vw);">                
                 <div class="d-flex flex-column justify-content-center align-items-center">                
-                    <h1 class="fs-4 pt-2 mt-3" style="color: var(--C_oscuro);width: 80%;font-weight: bold;">Confirmar tus datos</h1>
-                    <div style="width: 80%;">
+                    <h1 class="fs-4 pt-2 mt-3" style="color: var(--C_oscuro);width: 90%;font-weight: bold;">Confirmar tus datos</h1>
+                    <div style="width: 90%;">
                         <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
@@ -45,14 +45,14 @@
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
                         </div>
                     </div>
-                    <div style="width: 80%;">
+                    <div style="width: 90%;">
                         <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
                             <input type="checkbox" class="form-check-input p-0 m-0" name="" id="" style="width: 30px;height: 30px;"> 
                             <p class="p-0 m-0">He leído y acepto los términos y condiciones y las Políticas de Privacidad y tratamiento de datos personales</p>
                         </div>
                         <p>Te invitamos a revisar <strong style="color: var(--C_oscuro);cursor: pointer;">tips, políticas, términos y condiciones</strong> de visita y de la compra web.</p>
                     </div>
-                    <div style="width: 80%;">
+                    <div style="width: 90%;">
                         <h1 class="fs-5 pt-2" style="color: var(--C_oscuro);width: 80%;font-weight: bold;">Elije tu metodo de pago:</h1>
                         <div>
                             <div class="row d-flex justify-content-center align-items-center border rounded-4 p-2" style="height: 70px;">
@@ -67,22 +67,166 @@
                                 </ul>
                             </div>
                             <div class="row d-flex justify-content-center align-items-center border rounded-4 p-2 mt-3 mb-3"  style="height: 70px;">
-                                <input type="radio" class="form-check-input p-0 m-0 col-1" name="r_pay" id="" style="width: 30px;height: 30px;">
-                                <p class="col d-flex justify-content-center align-items-center p-0 m-0">Paga con Addi en hasta 6 cuotas.Pide un cupo</p> 
+                                <input type="radio" class="form-check-input p-0 m-0 col-1" name="r_pay" id="" style="width: 30px;height: 30px;">                  
+                                <p class="col d-flex justify-content-center align-items-center p-0 m-0"><div class="addi_banner_log" style="width: 20px; height: 20px; display: block;"></div>Paga con Addi en hasta 6 cuotas.Pide un cupo</p> 
                             </div>
+                            
                         </div>
                     </div>
                     <button class="aplica_descuento_btn">Pagar</button>
                 </div>
                 
             </form>
-            <div class="d-flex justify-content-center rounded-5 flex-column align-items-center" style="width: 80%;max-width: 550px;width: calc(180px + 30vw);min-width: 250px;">
+            <div class="d-flex rounded-5 flex-column align-items-center" style="width: 90%;max-width: 550px;width: calc(200px + 20vw);min-width: 250px;">
                 <div class="w-100 d-flex justify-content-center flex-column rounded-4" style="border: 1px solid var(--G_texo);">
                     <nav>
                         <div class="d-flex justify-content-center align-items-center text-white rounded-top-4 fs-5" style="background-color: var(--C_oscuro);padding: 11px;font-weight: bold;">Resumen de tu compra</div>
                         <div id="current_date" class="d-flex justify-content-center align-items-center " style="background-color: var(--V_pricipal);color: var(--C_oscuro);"></div>
                     </nav>                    
                     <div id="page_1" class="shoppy_body overflow-y-scroll">
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
+                        <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
+                            </div>
+                            <div class="w-auto d-flex justify-content-center position-relative align-items-center" style="padding-right: 15px;">
+                                <div class="p-1 text_content d-flex align-items-center gap-3 flex-wrap" id="text_content_1" style="color: var(--G_texo);max-height: 150px;border-radius: 10px;max-width: 271px;width: calc(180px + 10vw);min-width: 200px;">                                    
+                                    <h3 style="font-weight: bold;" class="m-0">Nombre Foto</h3>      
+                                    <p value="76410" id="product_1" class="p-0 m-0 fs-5" style="font-weight: bold;color: black;">$76.410</p>                                                                 
+                                </div>                                
+                            </div>                           
+                        </div>                     
                         <div class="h-auto d-flex p-2 flex-wrap justify-content-center align-items-center" style="width: 98%;border-bottom: 1px solid var(--G_texo);gap: 10%;">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="i_content" style="background-image: url(galery/photo_test.jpg);"></div>
