@@ -436,3 +436,10 @@ body{
 .addi_banner_log{
     background: url(https://statics.addi.com/assets/addi-icon-lineal.png) center center / contain no-repeat, transparent;
 }
+.addi_banner_info_img{
+    display: inline-block;
+    opacity: 1;
+    transform: none;
+    width: initial;
+    height: 0.8em !important;
+}
