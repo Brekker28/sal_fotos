@@ -21,6 +21,7 @@ body{
     --G_texo:#868686;
     --G_fondo:#b1b1b1;
     --G_borde:#c5c5c5;
+    --G_borde2:#eeeeee;
   }
 .off_border{
     border: none !important;
